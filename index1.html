@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="style.css">
+    
+   
+   
+</head>
+<body >
+    <div id="non-congo" >
+    <div id="upper">
+    <div id="upper-left"><h1>ROCK</h1>
+    <h1>PAPER</h1>
+    <h1>SCISSORS</h1>
+    </div>
+    <div id="upper-right">
+       <div id="upper1">
+        <spam style="font-size:17; color:#656565;">COMPUTER<br>SCORE</spam><br>
+        <input type="text" id="computer" value="0" >
+
+       </div>
+       <div id="upper2">
+       <spam style="font-size:17px; color:#656565;">YOUR<br>SCORE</spam><br>
+       <input type="text" id="your" value="0">
+    </div>
+
+</div>
+</div>
+<div id="container2">
+   
+    <div id="container2-left" >
+    
+        
+<div id="first"> <button id="stone" onclick="decision(1)"><img src="stone.svg"></button></div>
+<div id="second"><button id="paper" onclick="decision(2)"><img src="paper.svg"></button></div>
+<div id="third"><button id="scissor" onclick="decision(3)"><img src="scissor.svg"></button></div>
+            
+
+
+    </div>
+    <div id="container2-left-win" style="display:none">
+        <div id="first11"><spam>YOU PICKED</spam><br><br><button id="user-win"><img id="photo-user-win"> </div>
+        <div id="second22"><br><br><br><br><br><br><br><center><spam id="win-spam">YOU WIN</spam><br><spam style="font-size:13px;">AGAINST COMPUTER</spam></center><center><button id="play-again-win" onclick="redirect()">PLAY AGAIN</button></center></div>
+        <div id="third33"><spam>PC PICKED</spam><br><br><button id="computer-win"><img id="photo-computer-win"></div>
+    </div>
+    <div id="container2-left-lose" style="display:none">
+        <div id="first111"><spam>YOU PICKED</spam><br><br><button id="user-lose"><img id="photo-user-lose"> </div>
+        <div id="second222"><br><br><br><br><br><br><br><center><spam id="win-spam">YOU LOST</spam><br><spam style="font-size:13px;">AGAINST COMPUTER</spam></center><center><button id="play-again-lose" onclick="redirect()" >PLAY AGAIN</button></center></div>
+        <div id="third333"><spam>PC PICKED</spam><br><br><button id="computer-lose"><img id="photo-computer-lose"></div>
+        </div>
+        <div id="container2-left-tie" style="display:none">
+            <div id="first1"><spam>YOU PICKED</spam><br><br><button id="user-tie"><img id="photo-user-tie"> </div>
+            <div id="second2"><br><br><br><br><br><br><br><center><h2>TIE UP</h2></center><button id="replay" onclick="redirect()">REPLAY</button></div>
+            <div id="third3"><spam>PC PICKED</spam><br><br><button id="computer-tie"><img id="photo-computer-tie"></div>
+        </div>
+    <div id="container2-right">
+        
+        <button id="cross" style="display:none" onclick="rulesclose()">X</button>
+        <div id="lower11" ></div>
+        <div id="lower1" style="display:none" >
+         
+            <h4 style="text-align:center">Game Rules</h4>
+            <ul style="list-style-type:square;">
+                <li>
+                    
+                    Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” 
+                        or just “rock, paper, scissors.”</li>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                   </ul>
+        
+     </div>
+        
+        <div id="lower2">
+            <button id="rules" onclick="rulesopen()" >RULES</button>
+        </div>
+        <div id="lower22" style="display:none">
+            <button id="rules" onclick="rulesopen()" >RULES</button>
+           <spam><button id="next" onclick="commingback1()" >NEXT</button></spam>
+        </div>
+    </div>
+
+</div>
+</div>
+<div id="congo" style="display:none">
+    <br>
+    <br>
+    <br>
+    <img src="trophy.svg"><br>
+    <spam id="hurray">HURRAY!!</spam><br>
+    <spam>YOU WON THE GAME</spam>
+    <button id="play-again-congo" onclick="commingback()">PLAY AGAIN</button>
+</div>
+</body>
+
+<script src="content.js"></script>
+</html>
